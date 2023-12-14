@@ -40,36 +40,12 @@
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
-      <div class="header_top">
-        <div class="container-fluid ">
-          <div class="contact_nav">
-            <a href="">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                Call : +01 123455678990
-              </span>
-            </a>
-            <a href="">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <span>
-                Email : demo@gmail.com
-              </span>
-            </a>
-            <a href="">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <span>
-                Location
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
       <div class="header_bottom">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
             <a class="navbar-brand" href="index.html">
               <span>
-                Carint
+                <img class="wangzi-logo" src="./images/WangziLogoHead.png" width="230" height="65">
               </span>
             </a>
 
@@ -91,13 +67,6 @@
                 <li class="nav-item active">
                   <a class="nav-link" href="contact.html">Contact Us <span class="sr-only">(current)</span> </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
-                </li>
-                <form class="form-inline">
-                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                  </button>
                 </form>
               </ul>
             </div>
@@ -122,22 +91,22 @@
       </div>
       <div class="row">
         <div class="col-lg-4 col-md-5 offset-md-1">
-          <div class="form_container">
-            <form action="">
+          <div class="form_container contact-form">
+            <form action="contact.php">
               <div>
-                <input type="text" placeholder="Your Name" />
+                <input type="text" placeholder="Your Name" name="name"/>
               </div>
               <div>
-                <input type="text" placeholder="Phone Number" />
+                <input type="text" placeholder="Phone Number" name="phone"/>
               </div>
               <div>
-                <input type="email" placeholder="Email" />
+                <input type="email" placeholder="Email" name="email"/>
               </div>
               <div>
-                <input type="text" class="message-box" placeholder="Message" />
+                <input type="text" class="message-box" placeholder="Message" name="message"/>
               </div>
               <div class="btn_box">
-                <button>
+                <button name="submit">
                   SEND
                 </button>
               </div>
@@ -147,7 +116,9 @@
         <div class="col-lg-7 col-md-6 px-0">
           <div class="map_container">
             <div class="map">
-              <div id="googleMap"></div>
+              <div class="img-box">
+                <img src="./images/contact_us.jpg" alt="contact-us">
+              </div>
             </div>
           </div>
         </div>
@@ -168,12 +139,6 @@
             </h4>
             <div class="contact_link_box">
               <a href="">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
-              </a>
-              <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
                   Call +01 1234567890
@@ -182,7 +147,7 @@
               <a href="">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 <span>
-                  demo@gmail.com
+                  desmondsean75@gmail.com
                 </span>
               </a>
             </div>
@@ -205,10 +170,10 @@
         <div class="col-md-6 col-lg-3 info_col">
           <div class="info_detail">
             <h4>
-              Info
+              Wangzi
             </h4>
             <p>
-              necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
+              Providing quality training and skills development to maritime students in South Africa.
             </p>
           </div>
         </div>
@@ -230,7 +195,6 @@
                 <img src="images/nav-bullet.png" alt="">
                 Services
               </a>
-
               <a class="" href="contact.html">
                 <img src="images/nav-bullet.png" alt="">
                 Contact Us
@@ -240,12 +204,11 @@
         </div>
         <div class="col-md-6 col-lg-3 info_col ">
           <h4>
-            Subscribe
+            Questions
           </h4>
           <form action="#">
-            <input type="text" placeholder="Enter email" />
             <button type="submit">
-              Subscribe
+              Talk to us
             </button>
           </form>
         </div>
@@ -254,17 +217,6 @@
   </section>
 
   <!-- end info section -->
-
-  <!-- footer section -->
-  <section class="footer_section">
-    <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
-      </p>
-    </div>
-  </section>
-  <!-- footer section -->
 
   <!-- jQery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
